@@ -3,7 +3,7 @@
 A local AI-powered study assistant built using:
 
 - HTML
-- CSS
+- CSS 
 - JavaScript
 - Node.js
 - Ollama
