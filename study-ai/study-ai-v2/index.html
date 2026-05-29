@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study AI</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="logo">
+      📚 Study AI
+    </div>
+
+    <button id="newChatBtn" class="new-chat">
+      + New Chat
+    </button>
+
+    <div id="history" class="history"></div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+
+      <div class="profile">
+
+        <img
+          id="userPfp"
+          src="https://i.imgur.com/HeIi0wU.png"
+        />
+
+        <span id="username">
+          You
+        </span>
+
+      </div>
+
+      <div class="top-actions">
+
+        <button id="themeBtn">
+          🌓
+        </button>
+
+        <button id="settingsBtn">
+          ⚙
+        </button>
+
+      </div>
+
+    </header>
+
+    <!-- CHAT -->
+    <div id="chatBox" class="chat-box">
+
+      <div class="welcome">
+
+        <h1>Study AI</h1>
+
+        <p>
+          Your local AI study assistant
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-area">
+
+      <textarea
+        id="prompt"
+        placeholder="Ask anything..."
+      ></textarea>
+
+      <button id="sendBtn">
+        ➤
+      </button>
+
+    </div>
+
+  </main>
+
+</div>
+
+<!-- SETTINGS MODAL -->
+<div id="settingsModal" class="modal hidden">
+
+  <div class="modal-content">
+
+    <h2>Settings</h2>
+
+    <label>Username</label>
+
+    <input
+      type="text"
+      id="nameInput"
+      placeholder="Enter username"
+    />
+
+    <label>Profile Picture URL</label>
+
+    <input
+      type="file"
+      id="pfpInput"
+      accept="image/*"
+/>
+    />
+
+    <button id="saveSettings">
+      Save
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
