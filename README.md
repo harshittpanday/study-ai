@@ -1,4 +1,4 @@
-# 📚 Study AI V1
+# 📚 Study AI V1 
 
 A local AI-powered study assistant built using:
 
